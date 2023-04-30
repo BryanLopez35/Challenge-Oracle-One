@@ -1,46 +1,52 @@
 body {
-    /* Encriptador - 1 Desktop */
-
-
     position: relative;
-    width: 1440px;
-    height: 1024px;
-
-    /* Light blue/light-blue-100 */
-
     background: #F3F5FC;
 }
 
-@media (min-width: 768px) {
 
-    /* ajusta los estilos para dispositivos con pantallas de al menos 768px de ancho */
+@media (min-width: 1200px) {
     body {
         max-width: 1440px;
-        /* máximo ancho permitido */
         margin: 0 auto;
-        /* centra el contenido */
+        padding: 20px;
     }
 }
 
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0A3871;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    display: flex; /* Agregar display:flex */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: #fff; /* Cambiar color del texto */
+  }
+  
+  a:hover {
+    color: blue; /* Cambiar color al pasar el cursor encima */
+  }
+
 .logo {
-
-    /* Logo */
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
-
     position: absolute;
     width: 120px;
     height: 48px;
     left: 40px;
     top: 40px;
-
-
 }
 
 .input-text:focus {
@@ -69,97 +75,60 @@ body {
 }
 
 .aviso {
-    /* Frame 1 */
-
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 8px;
-
     position: absolute;
     width: 229px;
     height: 18px;
     left: 240px;
-    top: 851px;
+    top: 710px;
 
 }
 
 
 
 .text-aviso {
-    /* Solo letras minúsculas y sin acentos */
-
-
     width: 205px;
     height: 18px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 12px;
     line-height: 200%;
-    /* identical to box height, or 18px */
-
-
-    /* Gray/gray-400 */
-
     color: #495057;
-
     opacity: 0.8;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .botones {
-    /* Frame 3 */
-
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-
     position: absolute;
     width: 680px;
     height: 67px;
     left: 240px;
-    top: 885px;
+    top: 740px;
 
 }
 
 .boton1 {
-    /* Button */
-
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-
     width: 328px;
     height: 67px;
-
-    /* Dark blue/dark-blue-300 */
-
     background: #0A3871;
     border-radius: 24px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -205,7 +174,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 400px;
-    height: 944px;
+    height: 800px;
     left: 1000px;
     top: 40px;
     background: #FFFFFF;
@@ -246,28 +215,15 @@ body {
 }
 
 .mensaje2 {
-    /* Ingresa el texto que desees encriptar o desencriptar. */
-
-
     width: 336px;
     height: 48px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    /* or 24px */
-
     text-align: center;
-
-    /* Gray/gray-400 */
-
     color: #495057;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     align-self: stretch;

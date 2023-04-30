@@ -18,7 +18,7 @@
 
         <div id="encrypt">
             <form>
-                <textarea class="input-text" maxlength="200" placeholder="Ingresa el texto aquí"></textarea>
+                <textarea id="texto" class="input-text" maxlength="200" placeholder="Ingresa el texto aquí"></textarea>
             </form>
         </div>
 
@@ -31,14 +31,14 @@
         </div>
 
         <div class="botones">
-            <button class="boton1">Encriptar</button>
+            <button class="boton1" onclick="showText();">Encriptar</button>
             <button class="boton2">Desencriptar</button>
         </div>
-        <div class="rectangulo">
-            <div class="imageAlura">
+        <div id="contenedor-lateral" class="rectangulo">
+            <div id="imageAlura" class="imageAlura">
                 <img src="img/Muñeco.png" alt="Muñeco image">
             </div>
-            <div class="mensaje-conteiner">
+            <div id="mensajes" class="mensaje-conteiner">
                 <div class="mensaje1">
                     <h2>Ningún mensaje fue encontrado</h2>
                 </div>
@@ -48,6 +48,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div>© <span id="fecha-footer"></span> <a href="https://www.linkedin.com/in/bryan-lopez-hdz/">Bryan Lopez</a></div>
+    </footer>
     <script src="./js/encrypt.js"></script>
 </body>
 
