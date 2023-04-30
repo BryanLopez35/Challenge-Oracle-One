@@ -1,0 +1,275 @@
+body {
+    /* Encriptador - 1 Desktop */
+
+
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    /* Light blue/light-blue-100 */
+
+    background: #F3F5FC;
+}
+
+@media (min-width: 768px) {
+
+    /* ajusta los estilos para dispositivos con pantallas de al menos 768px de ancho */
+    body {
+        max-width: 1440px;
+        /* máximo ancho permitido */
+        margin: 0 auto;
+        /* centra el contenido */
+    }
+}
+
+.logo {
+
+    /* Logo */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.input-text::placeholder {
+    color: #0A3871;
+}
+
+.input-text {
+    position: absolute;
+    width: 680px;
+    height: 650px;
+    left: 240px;
+    top: 168px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    resize: none;
+    background: transparent;
+    color: #0A3871;
+}
+
+.aviso {
+    /* Frame 1 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+
+}
+
+
+
+.text-aviso {
+    /* Solo letras minúsculas y sin acentos */
+
+
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 200%;
+    /* identical to box height, or 18px */
+
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    /* Frame 3 */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
+}
+
+.boton1 {
+    /* Button */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: center;
+}
+
+
+
+.boton2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+    justify-content: center;
+}
+
+.rectangulo {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.imageAlura {
+    max-width: 336px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.mensaje-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    gap: 16px;
+    max-width: 336px;
+}
+
+.mensaje1 {
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mensaje2 {
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+
+
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
