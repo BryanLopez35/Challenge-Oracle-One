@@ -30,12 +30,13 @@ footer {
 a {
     text-decoration: none; /* Eliminar subrayado */
     color: #fff; /* Cambiar color del texto */
-  }
-  
-  a:hover {
-    color: blue; /* Cambiar color al pasar el cursor encima */
+    
   }
 
+  a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Agregar sombra blanca al texto cuando pase el cursor por encima */
+  }
+  
 .logo {
     display: flex;
     flex-direction: column;
@@ -73,6 +74,35 @@ a {
     background: transparent;
     color: #0A3871;
 }
+
+
+
+.input-text2:focus {
+    outline: none;
+}
+
+.input-text2::placeholder {
+    color: #0A3871;
+}
+
+.input-text2 {
+    display:inline;
+    height: auto;
+    margin-bottom: 16px;
+    width: 370px;
+    height: 400px;
+    resize: none;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    resize: none;
+    background: transparent;
+    color: #0A3871;
+}
+
 
 .aviso {
     display: flex;
