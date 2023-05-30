@@ -1,6 +1,18 @@
 window.onload = function () {
     document.getElementById("fecha-footer").textContent = obtenerAnioActual();
     verificador();
+
+
+    var inputTextarea = document.getElementById("texto");
+    var outputTextarea = document.getElementById("output-text");
+
+    inputTextarea.addEventListener("input", function () {
+        outputTextarea.value = inputTextarea.value;
+    });
+
+
+
+
 };
 
 
@@ -19,6 +31,8 @@ function obtenerAnioActual() {
 function mostrarTexto() {
     // Obtenemos el elemento textarea del DOM mediante su ID.
     const textarea = document.getElementById("texto");
+
+    const copiar = document.getElementById("copiar");
     // También obtenemos el elemento div correspondiente al texto encriptado.
     const miDiv = document.getElementById("texto-encriptado");
 
@@ -28,6 +42,7 @@ function mostrarTexto() {
         // Dependiendo de si hay o no texto en el textarea, hacemos visible o invisible
         // el elemento div correspondiente al texto encriptado. 
         miDiv.style.display = textarea.value.length > 0 ? "block" : "none";
+        copiar.style.display = "block";
     };
 }
 
@@ -37,7 +52,7 @@ function ocultar() {
     const input = document.getElementById('texto');
 
     // Obtener todos los elementos div con los IDs "imageAlura" y "mensajes" del DOM
-    const divs = document.querySelectorAll('#imageAlura, #mensajes');
+    const divs = document.querySelectorAll('#imageAlura, #messages');
 
     // Crear una función para alternar la visibilidad de los elementos div anteriores en función de si el campo de entrada está vacío o no
     const toggleDivsDisplay = () => {

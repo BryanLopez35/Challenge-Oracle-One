@@ -2,7 +2,7 @@
 const entrada = document.getElementById("texto");
 
 // Obtenemos la referencia al elemento del DOM con el ID "texto2".
-const salida = document.getElementById("texto2");
+const salida = document.getElementById("output-text");
 
 
 function verificador() {
@@ -48,7 +48,7 @@ function procesar() {
     if (salida.value !== resultado) {
         salida.value = resultado;
     }
-    alert(resultado);
+
 }
 
 // Función que desencripta el texto encriptado ingresado y muestra el resultado en un cuadro de diálogo de alerta.
@@ -58,7 +58,7 @@ function procesar2() {
     if (salida.value !== resultado) {
         salida.value = resultado;
     }
-    alert(resultado);
+
 }
 
 // Función auxiliar que reemplaza las vocales del texto ingresado por sus valores correspondientes en el objeto "llaves".
@@ -79,4 +79,16 @@ function desencriptar(textoEncriptado) {
     return textoEncriptado.replace(/enter|imes|ai|ober|ufat/g, function (match) {
         return llavesInvertidas[match];
     });
+}
+
+
+function copiarContenido() {
+    var textarea = document.getElementById("output-text");
+
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // Para dispositivos móviles
+
+    document.execCommand("copy");
+
+    alert("Contenido copiado al portapapeles");
 }
